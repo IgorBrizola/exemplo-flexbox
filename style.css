@@ -24,7 +24,7 @@ body {
 
 
 .container-flex {
-    height: 50%;
+    height: 60%;
     width: 60%;
 
     display: flex;
@@ -130,7 +130,6 @@ body {
 .title {
     height: auto;
     width: 100%;
-
 }
 
 .text {
@@ -150,12 +149,12 @@ body {
     color: red;
     font-weight: 800;
     font-style: normal;
-    font-size: 24px;
+    font-size: 14px;
 
 }
 
 .text p{
-    font-size: 18px;
+    font-size: 12px;
 
 }
 
@@ -172,4 +171,151 @@ body {
     object-fit: cover;
     display: block;
     border-radius: 20px;
+}
+
+@media (min-width: 1200px) {
+    .container-flex {
+        max-width: 1400px;
+        width: 90%;
+        height: 60%;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    .left {
+        width: 40%;
+    }
+
+    .left img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .right {
+        width: 50%;
+        gap: 30px;
+    }
+
+    .content-right {
+        gap: 20px;
+        align-items: center;
+    }
+
+    .image {
+        height: 100%;
+        width: 30%;
+    }
+
+    .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 20px;
+    }
+
+    .titles {
+        width: 65%;
+    }
+
+    .title h3 {
+        font-size: 22px;
+    }
+
+    .text p {
+        font-size: 16px;
+    }
+
+    .container-flex-video h1 {
+        font-size: 60px;
+    }
+
+    .container-flex-video span {
+        font-size: 30px;
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+    .container-flex {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+        height: auto;
+    }
+
+    .content-right {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .titles {
+        width: 100%;
+    }
+
+    .container-flex-video h1 {
+        font-size: 36px;
+    }
+
+    .container-flex-video span {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-flex-video {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .container-flex-video h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .container-flex-video span {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .title h3 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .text p {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .container-flex {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .titles {
+        align-items: center;
+        text-align: center;
+    }
+
+    .image img, .left img {
+        border-radius: 10px;
+    }
+
+    .right {
+        gap: 10px;
+    }
 }
